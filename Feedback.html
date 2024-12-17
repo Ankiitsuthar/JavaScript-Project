@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Feedback.css">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="myH1">Feedback Form</h1>
+
+    <!-- Input Fields -->
+    <label for="myName">Name:</label>
+    <input type="text" id="myName" placeholder="Enter your name">
+
+    <label for="myEmail">Email:</label>
+    <input type="email" id="myEmail" placeholder="Enter your email">
+
+    <label for="myDOB">Date of Birth:</label>
+    <input type="date" id="myDOB">
+
+    <label for="myDivision">Division:</label>
+    <select id="myDivision">
+        <option value="" disabled selected>Select your division</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+
+    <label for="myEnroll">Enroll Number:</label>
+    <input type="text" id="myEnroll" placeholder="Enter enroll number">
+
+    <label for="myCity">City:</label>
+    <input type="text" id="myCity" placeholder="Enter your city">
+   
+    <!-- Submit Button -->
+    <button type="submit" id="mybutton">Submit</button>
+
+    <!-- Thank You Message -->
+     
+    <p id="thankYouMessage">Thank you for submitting your details!</p>
+
+
+    </div>
+    
+    <script src="./Feedback.js"></script>
+</body>
+</html>

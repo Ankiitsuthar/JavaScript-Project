@@ -1,0 +1,24 @@
+body {
+    padding: o;
+    margin: 0;
+    background-color:aqua;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 350px;
+    height: 450px;
+    margin-top: 100px;
+    justify-items: center;
+    background-color: white;
+}
+
+
+.button {
+    background-color:lightblue;
+}
+
