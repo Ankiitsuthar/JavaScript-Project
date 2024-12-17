@@ -1,0 +1,113 @@
+ /* General Styles */
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7fa;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #4a90e2;
+    text-align: center;
+  }
+
+  .shapes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .shape {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .shape:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #3b79c4;
+  }
+
+  div[id$="-result"] {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #4a90e2;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    button {
+      font-size: 0.9rem;
+    }
+  }
+
+.cube {
+    /* justify-items: center; */
+    /* align-items: center; */
+    
+}

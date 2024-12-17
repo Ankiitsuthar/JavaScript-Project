@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Geometric Calculator</title>
+  <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+  <div class="container">
+    <h1>3D Geometric Calculator</h1>
+
+    <div class="shapes-grid">
+      <!-- Cube -->
+      <div class="shape">
+        <img src="https://media.istockphoto.com/id/1436622969/vector/cube-icon-cuboid-shape-vector-element-for-preschool-kindergarten-and-montessori-kids-for.jpg?s=612x612&w=0&k=20&c=xIYWdSZIuhXqM7n-B4FD-94ein7l7d2UHM1OVFkfZLM=" alt="Cube_image" width="60%" class="cube">
+        <h2>Cube</h2>
+        <label>Side Length: <input type="number" id="cube-side"></label>
+        <button onclick="calculateCube()">Calculate</button>
+        <div id="cube-result"></div>
+      </div>
+
+      <!-- Sphere -->
+      <div class="shape">
+        <img src="https://math-media.byjusfutureschool.com/bfs-math/2022/07/14115654/Asset-3-5-1-300x270.png" alt="sphere_image" width="60%">
+        <h2>Sphere</h2>
+        <label>Radius: <input type="number" id="sphere-radius"></label>
+        <button onclick="calculateSphere()">Calculate</button>
+        <div id="sphere-result"></div>
+      </div>
+
+      <!-- Rectangular Prism -->
+      <div class="shape">
+        <img src="https://maths.olympiadsuccess.com/assets/images/maths_square_dictionary/rectangularprism.jpg" alt="Rectangular_Prism" width="60%">
+        <h2>Rectangular Prism</h2>
+        <label>Length: <input type="number" id="prism-length"></label>
+        <label>Width: <input type="number" id="prism-width"></label>
+        <label>Height: <input type="number" id="prism-height"></label>
+        <button onclick="calculatePrism()">Calculate</button>
+        <div id="prism-result"></div>
+      </div>
+
+      <!-- Pyramid -->
+      <div class="shape">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Square_pyramid_Drawing.jpg" alt="Pyramid" width="60%">
+        <h2>Pyramid</h2>
+        <label>Base Length: <input type="number" id="pyramid-base"></label>
+        <label>Height: <input type="number" id="pyramid-height"></label>
+        <button onclick="calculatePyramid()">Calculate</button>
+        <div id="pyramid-result"></div>
+      </div>
+
+      <!-- Tetrahedron -->
+      <div class="shape">
+        <img src="https://www.technologyuk.net/mathematics/geometry/images/geometry_0173.gif" alt="Tetrahedron" width="60%">
+        <h2>Tetrahedron</h2>
+        <label>Edge Length: <input type="number" id="tetra-edge"></label>
+        <button onclick="calculateTetrahedron()">Calculate</button>
+        <div id="tetra-result"></div>
+      </div>
+
+      <!-- Torus -->
+      <div class="shape">
+        <img src="https://i0.wp.com/www.a-higher-view.com/wp-content/uploads/2023/05/Torus-Sacred-Geometry.png?resize=300%2C300&ssl=1" alt="Torus" width="60%">
+        <h2>Torus</h2>
+        <label>Major Radius (R): <input type="number" id="torus-major"></label>
+        <label>Minor Radius (r): <input type="number" id="torus-minor"></label>
+        <button onclick="calculateTorus()">Calculate</button>
+        <div id="torus-result"></div>
+      </div>
+
+      <!-- Cylinder -->
+      <div class="shape">
+        <img src="https://png.pngtree.com/recommend-works/png-clipart/20240615/ourmid/pngtree-cylinder-shape-geometry-element-png-image_12749206.png" alt="Cylinder" width="60%">
+        <h2>Cylinder</h2>
+        <label>Radius: <input type="number" id="cylinder-radius"></label>
+        <label>Height: <input type="number" id="cylinder-height"></label>
+        <button onclick="calculateCylinder()">Calculate</button>
+        <div id="cylinder-result"></div>
+      </div>
+
+      <!-- Cone -->
+      <div class="shape">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/791/251/non_2x/cone-shape-outline-icon-free-vector.jpg" alt="Cone" width="60%">
+        <h2>Cone</h2>
+        <label>Radius: <input type="number" id="cone-radius"></label>
+        <label>Height: <input type="number" id="cone-height"></label>
+        <button onclick="calculateCone()">Calculate</button>
+        <div id="cone-result"></div>
+      </div>
+
+      <!-- Hemisphere -->
+      <div class="shape">
+        <img src="https://thumbs.dreamstime.com/b/vector-hemisphere-gradients-shadow-game-icon-package-design-logo-mobile-ui-web-education-d-white-background-325466393.jpg" alt="Hemisphere" width="60%">
+        <h2>Hemisphere</h2>
+        <label>Radius: <input type="number" id="hemisphere-radius"></label>
+        <button onclick="calculateHemisphere()">Calculate</button>
+        <div id="hemisphere-result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
