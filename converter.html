@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./converter.css">
+    <title>Dynamic Unit Converter</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Dynamic Unit Converter</h1>
+
+        <select id="unit-type">
+            <option value="temperature">Temperature</option>
+            <option value="weight">Weight</option>
+            <option value="length">Length</option>
+            <option value="data">Data</option>
+            <option value="area">Area</option>
+            <option value="speed">Speed</option>
+            <option value="time">Time</option>
+            <option value="volume">Volume</option>
+        </select>
+
+        <div class="input-boxes">
+            <input type="number" id="input1" placeholder="Enter value">
+            <input type="number" id="input2" placeholder="Output" readonly>
+        </div>
+
+        <div class="dropdowns">
+            <select id="unit1"></select>
+            <select id="unit2"></select>
+        </div>
+
+        <button class="calculate-button" id="calculate">Calculate</button>
+    </div>
+
+    <script src="./converter.js"></script>
+</body>
+</html>

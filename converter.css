@@ -1,0 +1,58 @@
+body {
+    background-color:aqua;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+select, input, button {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #252525;
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculate-button {
+    width: 100%;
+    margin-top: 20px;
+}
