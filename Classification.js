@@ -1,7 +1,7 @@
 let classifier;
 let img;
 
-classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/Chw68t53y/");
+classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/c9xdnimMm/");
 
 function gotResult(results) {
     // Display the results
